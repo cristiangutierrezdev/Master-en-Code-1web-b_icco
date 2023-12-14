@@ -1,0 +1,25 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(15, 15, 15);
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  margin: 15px;
+  border-radius: 10px;
+  /* opacity: 0.5; para todo el contenido */
+}
+
+#profile-pic {
+  height: 225px !important;
+  width: 225px !important;
+}
+
+#section1 img {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  object-fit: cover;
+}

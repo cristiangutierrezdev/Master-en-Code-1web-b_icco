@@ -1,0 +1,38 @@
+.product-card {
+  background-color: rgb(242, 242, 242);
+  padding: 5px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 200px;
+  border: 1px solid gray
+}
+
+.product-card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#characteristics {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  height: 100%;
+}
+
+#product-title {
+  font-size: 20px;
+}
+#product-price {
+  font-size: 25px;
+}
+#product-other {
+  font-size: 15px;
+  color: green;
+  font-weight: bold;
+}

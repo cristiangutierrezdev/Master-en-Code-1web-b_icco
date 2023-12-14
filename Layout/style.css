@@ -1,0 +1,77 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Main container usa display flex con direccion en column */
+#main-container {
+  background-color: rgb(252, 252, 252);
+  height: 100vh; /* Esta medida representa el alto de la pantalla del usuario */
+  width: 100vw; /* Esta medida representa el ancho de la pantalla del usuario */
+  display: flex; /* habilito a las propiedades de disposición=> flex direction, justify-content, align-items , gap */
+  flex-direction: column; /* direccion de sus hijos */
+  justify-content: space-between; /* disposición en el contenedor */
+}
+
+/*------------------------ HEADER STYLES ------------------------*/
+header {
+  background-color: #fef158;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* el eje x es el principal */
+  align-items: center; /* eje y es el cross */
+}
+
+#logo-container {
+  height: 60px;
+  width: 160px;
+}
+
+#logo-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#options-container {
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+#profile-container {
+  height: 50px;
+  width: 170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#profile-image {
+  height: 50px;
+  width: 50px;
+}
+
+/* ------------------------------------------------------------- */
+/*------------------------ MAIN STYLES ------------------------*/
+main {
+
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* se organiza el contenido en base a sus hijos y el tamaño del mismo */
+  gap: 15px;
+}
+/* ------------------------------------------------------------- */
+
+/*------------------------ FOOTER STYLES ------------------------*/
+footer {
+  background-color: green;
+  height: 10%;
+}
