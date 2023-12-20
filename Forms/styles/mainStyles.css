@@ -1,0 +1,32 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+section {
+  width: 100%;
+  /* height: 100%; */
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+  background-color: yellow;
+  padding: 10px;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 50%;
+}
