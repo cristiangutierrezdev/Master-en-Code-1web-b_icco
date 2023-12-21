@@ -1,0 +1,36 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  font-size: 20px; /* hace referencia a rem */
+}
+
+#divPadre {
+  width: 50%;
+  height: 50%;
+  background-color: red;
+}
+
+#divHijo1 {
+  width: 50%;
+  height: 50%;
+  background-color: blue;
+}
+#divHijo2 {
+  width: 50%;
+  height: 50%;
+  background-color: yellow;
+  font-size: 15px; /* hace referencia a em */
+}
+
+#remSpan {
+  font-size: 1rem; /* La mitad del font-size en body */
+}
+
+#pxSpanñ{
+  font-size: 10px; 
+}
+#emSpan {
+  font-size: 2em; /* La mitad del font-size del pariente mas cercano */
+}
