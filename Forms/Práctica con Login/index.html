@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ESTILOS DE BOOTSTRAP -->
+    <!-- para ingresar a bootstrap ==>  https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- MIS ESTILOS PERSONALES -->
+    <link rel="stylesheet" href="./styles/mainStyles.css" />
+    <title>LOGIN</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <header>
+        <!-- barra de navegacion -->
+        <nav class="navbar navbar-expand-lg bg-info-subtle">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <form>
+          <section id="image-container">
+            <img
+              id="img-banco"
+              src="https://play-lh.googleusercontent.com/gYR4jAAc1ijOk5naipxRcKAbQ94SSVgGAnSer_-7iDYLxbwnrMMLpbuBGDvsi5DkNw"
+              alt="logo-banco"
+            />
+            <button id="btn-cerrar">❌</button>
+          </section>
+          <section id="input-container">
+            <div>
+              <label for="">Usuario</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label for="">Contraseña</label>
+              <input type="text" />
+            </div>
+            <div>
+              <button>LOGIN</button>
+              <section id="remember">
+                <input type="checkbox" name="" id="" />
+                <label for="">Recordarme</label>
+              </section>
+            </div>
+          </section>
+          <section id="button-container">
+            <button type="button" class="btn btn-danger">Cancelar</button>
+            <a href="google.com"> ¿Olvidaste tu contraseña?</a>
+          </section>
+        </form>
+      </main>
+      <!-- PIE DE PAGINA -->
+      <footer>
+        Píe de pagina
+        <!-- info adicional -->
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

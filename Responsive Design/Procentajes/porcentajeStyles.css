@@ -28,8 +28,8 @@ body {
   font-size: 1rem; /* La mitad del font-size en body */
 }
 
-#pxSpanñ{
-  font-size: 10px; 
+#pxSpanñ {
+  font-size: 10px;
 }
 #emSpan {
   font-size: 2em; /* La mitad del font-size del pariente mas cercano */
