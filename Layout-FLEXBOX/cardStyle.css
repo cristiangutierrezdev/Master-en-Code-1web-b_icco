@@ -1,12 +1,18 @@
 .product-card {
-  background-color: rgb(242, 242, 242);
+  background-color: white;
   padding: 5px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   height: 300px;
   width: 200px;
-  border: 1px solid gray
+  border: 1px solid gray;
+}
+
+.product-card:hover {
+  background-color: #d3d3d4;
+  height: 320px;
+  width: 220px;
 }
 
 .product-card img {

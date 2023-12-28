@@ -41,6 +41,26 @@ header {
   flex-direction: row;
   gap: 20px;
 }
+
+#search-input {
+  width: 24rem;
+  height: 2rem;
+  border-radius: 50px;
+  padding-left: 1rem;
+}
+
+#search-input:hover {
+  background-color: #c4c4c4;
+}
+
+#search-input:active {
+  background-color: #d61515;
+}
+
+#search-input:focus {
+  background-color: #15d642;
+}
+
 #profile-container {
   height: 50px;
   width: 170px;
@@ -49,17 +69,23 @@ header {
   justify-content: center;
   align-items: center;
   gap: 5px;
+  border-radius: 15px;
+}
+
+#profile-container:hover {
+  background-color: #fbf4a5;
+  text-decoration: underline;
 }
 
 #profile-image {
   height: 50px;
   width: 50px;
+  border-radius: 100%;
 }
 
 /* ------------------------------------------------------------- */
 /*------------------------ MAIN STYLES ------------------------*/
 main {
-
   padding: 15px;
   display: flex;
   flex-direction: row;
