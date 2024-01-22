@@ -1,3 +1,7 @@
+header{
+  height: 70px;
+  background-color: gray;
+}
 main {
   display: flex;
   flex-direction: row;
