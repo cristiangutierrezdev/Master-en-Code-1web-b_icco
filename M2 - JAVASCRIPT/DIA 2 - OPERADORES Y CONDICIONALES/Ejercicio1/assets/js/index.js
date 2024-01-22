@@ -16,7 +16,10 @@ const nuevaMultiplicacion = 155 * 55;
 
 // Resuelve el siguiente problema matemático reemplazando null para que el resultado final sea 1:
 const nuevoModulo = 21 % 2 === 1;
+//                     1 === 1  => true
 
+
+console.log(nuevoModulo);//true
 /* ----------------------------------------------------------------------------------- */
 
 // Ejercicio 1: Crear variables de diferentes tipos de datos y luego consologuear su valor.

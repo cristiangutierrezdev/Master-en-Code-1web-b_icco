@@ -24,6 +24,9 @@ const apellido = "Martin"; //=> una constante
 
 /* -----------------------TIPOS DE DATOS------------------------- */
 //undefined => aún no está definido /  su valor NO existe
+let estoEsUndefinedDeclarado = undefined//=> represento a un valor NO DEFINIDO
+let estoEsUndefined//=> represento a un valor NO DEFINIDO
+
 let nullValue = null; //=> su valor es nulo
 let string = "Cadena de caracteres";
 let number = 5;
@@ -31,21 +34,5 @@ let floatNumber = 1.5; //=> Número decimal va SIEMPRE con .
 let boolean = true;
 let boolean2 = false;
 
-/* -----------------------OPERADORES MATEMÁTICOS------------------------- */
-/* Las operaciones matemáticas arrojan un valor de salida único */
-let numeroFavorito = 22;
 
-let suma = numeroFavorito + 2; //24
-
-let resta = 5 - 5; // 0
-
-let multipliacion = 5 * 5; //25
-
-let division = 25 / 5; //5
-
-let residuoDeDivison = 25 % 5; // 25/5 => 0 sin resto
-
-let esPar = 3 % 2; /* Si da 0 es par, sino es impar */
-
-let potencia = 2 ** 3; // 8
 

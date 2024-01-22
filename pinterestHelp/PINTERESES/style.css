@@ -1,0 +1,24 @@
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 15px ;
+}
+
+section img {
+  width: 250px;
+  height: 350px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-converter{
+    width: 250px;
+    height: 500px;
+
+}
