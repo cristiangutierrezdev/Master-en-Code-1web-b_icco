@@ -24,4 +24,4 @@ if (numero2 > 20 && numero2 < 50) {
 }
 
 /* 3- Escribe un programa que pregunte al usuario su nota en un examen. En función de la nota, el programa debe mostrar un mensaje.
-Por ejemplo, si el usuario saca un 10, el mensaje podría ser "Excelente". Si el usuario saca un 9 o un 8, el mensaje podría ser "Muy bien". Si el usuario saca un 7 o un 6, el mensaje podría ser "Bien". Si el usuario saca un 5 o un 4, el mensaje podría ser "Suficiente". Y si el usuario saca un 3 o un 2, el mensaje podría ser "Insuficiente". */
+Por ejemplo, si el usuario saca un 10, el mensaje podría ser "Excelente". Si el usuario saca un 9 o un 8, el mensaje podría ser "Muy bien". Si el usuario saca un 7 o un 6, el mensaje podría ser "Bien". Si el usuario saca un 5 o un 4, el mensaje podría ser "Suficiente". Y si el usuario saca un 3 o un 2 o menos, el mensaje podría ser "Insuficiente". */
