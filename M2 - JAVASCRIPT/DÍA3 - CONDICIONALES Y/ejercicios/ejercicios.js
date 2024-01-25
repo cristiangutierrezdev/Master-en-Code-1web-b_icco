@@ -6,4 +6,5 @@ console.log(numero);
 
 
 /* 2- Devuelve "true" si "numero" es menor que 50 y mayor que 20; De lo contrario, devuelve "false"
-   Pista: debes usar &&*/
+   Pista: debes usar && */
+   let numeroEjercicio2 = null
