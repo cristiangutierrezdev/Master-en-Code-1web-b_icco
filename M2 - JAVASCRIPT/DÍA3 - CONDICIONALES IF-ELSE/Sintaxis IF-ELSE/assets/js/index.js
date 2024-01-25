@@ -13,7 +13,7 @@
 // }
 
 /* Crear una condición para que si tienes 18 años ó mas puedas ingresar a la disco. */
-/* La edad al ser ingresada por un prompt , se guardará como string ("28"), con el métdo Number(), lo convertiré a un tipo de dato Número/Number (28) */
+/* La edad al ser ingresada por un prompt , se guardará como string ("28"X), con el métdo Number(), lo convertiré a un tipo de dato Número/Number (28) */
 
 let edad = prompt(
   "BIENVENIDO A LA DISCOTECA! , POR FAVOR INGRESE SU EDAD ANTES DE CONTINUAR"

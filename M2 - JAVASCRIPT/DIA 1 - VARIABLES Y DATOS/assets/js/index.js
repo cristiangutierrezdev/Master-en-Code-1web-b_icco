@@ -12,7 +12,7 @@ Ejemplo uno de comentario / Comentario en bloque => apretando ALT + SHIFT + A
 
 /* -----------------------VARIABLES Y CONSTANTES-------------------------- */
 /* Las variables pueden ser definidas con la palabra reservada "var" o "let"/  constante=> const */
-// DECLARACIÓN (darle nombre)y ASIGNACIÓN DE VALOR(darle valor) de una variable
+// DECLARACIÓN (darle nombre) y ASIGNACIÓN DE VALOR(darle valor) de una variable
 
 let nombre = "Lautaro"; //=> variable con let
 //nombre = "Rodrigo" //=> Redeclaración/Reasignación de un valor

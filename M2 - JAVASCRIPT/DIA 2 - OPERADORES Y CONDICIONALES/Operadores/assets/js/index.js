@@ -71,7 +71,7 @@ let tiposIguales = typeof saludo === typeof nombre; //true
 
 let tiposIguales2 = typeof saludo === typeof edad; //false
 let tiposIguales3 = typeof "Hola" === typeof 25; //false
-//                          string              ===     number
+//                   string       ===     number
 
 /* -----OPERADORES LÓGICOS-------------------------------------------------------------- */
 //Operador AND => se hace con un doble &  => && => si todas las condiciones se cumplen, se arroja true
