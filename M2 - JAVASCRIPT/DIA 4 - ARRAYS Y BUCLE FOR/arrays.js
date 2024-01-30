@@ -9,11 +9,12 @@ let alumnosWeb = ["Rodrigo", "Jessica", "José", "Sarina" /* undefined */];
 //       index =     0           1          2      3             4  =>no existe!, undefined
 
 let primerAlumno = alumnosWeb[0]; // el primer elemento del array siempre es en posición indice 0
+let ultimoAlumno = alumnosWeb[alumnosWeb.length - 1]; // el ultimo elemento del array siempre es en posición array.length-1
 
 // console.log(alumnosWeb[0]);
 // console.log(alumnosWeb[1]);
 
-/* ----------------------------------------- */
+/* --------------REDECLARAR UN ARRAY--------------------------- */
 //Los arrays pueden redeclarar en sus valores , asignandoles el nuevo valor en la posición.
 
 let frutas = ["Pera", "Manzana", "Platano", "Naranja"];
@@ -23,3 +24,6 @@ let frutas = ["Pera", "Manzana", "Platano", "Naranja"];
 frutas[2] = "Uva";
 console.log(frutas[2]); //=>"Uva"
 console.log(frutas); //=>  ["Pera", "Manzana", "Uva", "Naranja"];
+
+/* --------------LARGO / LONGITUD DEL ARRAY  =>   .LENGTH     --------------------------- */
+console.log(frutas.length); //=> longitud del array en este momento del código
