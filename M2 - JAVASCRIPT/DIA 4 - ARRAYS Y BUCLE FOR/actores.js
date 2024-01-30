@@ -61,3 +61,7 @@ const actores = [
 console.log(actores.length); //Cantidad de actores en la caja
 
 console.log(actores[actores.length - 1]); // accedo al ultimo valor del array
+
+/* 1- Debes acceder al segundo elemento de la lista de actores y modificar su valor por el de su propio nombre , luego muestra en consola el valor modificado*/
+
+/* 2- Debes elminar el ultimo elemento del array y agregar uno nuevo, el cual debe tener el nombre de un actor nacional, debes mostrar en consola el ultimo elemneto con el nombre correcto y la longitud del array */
