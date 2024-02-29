@@ -1,7 +1,7 @@
 /* FUNCIONES VS FUNCIONES FLECHA */
 
 /* ES5 */
-//Declaración tradicional de una función
+//Declaración tradicional de una función=> EXRPRESIÓN DE FUNCION
 function miSuma(num) {
   return num + num;
 }
@@ -9,7 +9,7 @@ function miSuma(num) {
 const miSuma2 = function (num) {
   return num + num;
 };
-/* ES6 */
+/* ES6 FUNCION FLECHA*/
 const miSumaFlecha = (num) => num + num;
 //Si tiene un parámetro, no es necesario poner paréntesis.
 //Se puede omitir el return y las llaves {} si es una sola línea de programación después de la flecha.RETURN IMPLÍCITO

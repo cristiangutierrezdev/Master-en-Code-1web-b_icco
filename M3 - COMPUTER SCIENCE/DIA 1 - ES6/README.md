@@ -23,7 +23,16 @@ El motor V8 de Google convierte las instrucciones de Javascript en una lista de 
 Node. js es un entorno de tiempo de ejecución de JavaScript "basado en V8" que se utiliza para crear aplicaciones escalables del lado del servidor y de red a través de servidores privados virtuales.
 Esto abre la posibilidad a que hoy en día exista la carrera "Fullstack JS".
 
+`se puede correr un archivo JS desde la consola utilizando el comando |node nombreArchivo.js| `
+
 # NPM => NODE PACKAGE MANAGER
 Gestor de paquetes de node, veremos más adelante cuando veamos React y Backend.
 
 
+# ES6
+-Modulos
+-Spread operator
+-Rest operator
+-Funciones flecha (nos ayudará para métodos de array... objetos... strings...)
+-Interpolación
+-For...of
