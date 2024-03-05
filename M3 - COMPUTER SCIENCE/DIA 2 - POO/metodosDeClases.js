@@ -21,7 +21,7 @@ class Futbolista {
   }
 
   patearAlArco() {
-    `${this.nombre} hizo un gol`;
+    return `${this.nombre} hizo un gol`;
   }
   correr() {
     console.log(
@@ -30,6 +30,14 @@ class Futbolista {
   }
   regatear(jugador) {
     console.log(`${this.nombre} regateó a ${jugador}`);
+  }
+  estadisticas() {
+    return {
+      fuerza: this.fuerza,
+      velocidad: this.velocidad,
+      posicion: this.posicion,
+      habilidad: this.habilidad,
+    };
   }
 }
 
@@ -42,3 +50,6 @@ let futbolista5 = new Futbolista("buffon", "derecho", 80, 70, "portero", 90);
 futbolista1.correr();
 futbolista1.regatear("CR7");
 futbolista1.patearAlArco();
+
+
+futbolista2.estadisticas()

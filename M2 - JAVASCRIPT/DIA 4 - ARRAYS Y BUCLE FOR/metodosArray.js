@@ -34,11 +34,13 @@ console.log(primerasFrutas);
 
 /* .concat("array a agregar") => Este método une (concatena) el contenido de 2 arreglos existentes. No modifica dichos arreglos, si no que devuelve uno nuevo. */
 let otrasFrutas = ["Damasco", "Tomate", "Quinoto"];
-let todasLasFrutas = frutas.concat(otrasFrutas)
+let todasLasFrutas = frutas.concat(otrasFrutas);
 
 /* .sort() =>  Ordena la lista de forma ascendente (A-Z) por defecto. */
-let frutasOrdenadas = frutas.sort()
+let frutasOrdenadas = frutas.sort();
 
 /* .reverse() => Coloca los elementos del arreglo al revés. ¡¡¡¡¡Este método ALTERA EL ARREGLO ORIGINAL!!!!!. */
 let frutasInvertidas = frutas.reverse();
 console.log(frutasInvertidas);
+
+/* IR A M3 DIA 2 PARA VER METODO FOR EACH Y MAP */

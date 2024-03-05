@@ -77,7 +77,7 @@ let tiposIguales3 = typeof "Hola" === typeof 25; //false
 //Operador AND => se hace con un doble &  => && => si todas las condiciones se cumplen, se arroja true
 
 let ejemplo1 = 5 > 5 && 10 > 10;
-//              false  &&    false  => false
+//            false  &&    false  => false
 
 let ejemplo2 = true && 10 === 10;
 //             true &&   true    => true

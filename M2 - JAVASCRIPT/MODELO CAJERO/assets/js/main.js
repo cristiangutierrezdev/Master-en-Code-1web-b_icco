@@ -20,8 +20,6 @@ function login(usuario, password) {
   return usuarioEncontrado;
 }
 
-
-
 /* --------MANEJO DEL DOM------------------------ */
 const usuario = document.getElementById("usuario");
 const password = document.getElementById("password");

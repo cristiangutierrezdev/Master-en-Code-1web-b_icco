@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgb(69, 68, 74);
+ padding: 10px;
+}
+
+main {
+  background-color: rgb(255, 255, 255);
+
+}
+#selectores{
+    padding: 10px;
+}
+
+#eventos{
+    background-color: rgb(146, 146, 242);
+    padding: 10px;
+}    
+
+footer {
+  background-color: rgb(69, 68, 74);
+  padding: 10px;
+}

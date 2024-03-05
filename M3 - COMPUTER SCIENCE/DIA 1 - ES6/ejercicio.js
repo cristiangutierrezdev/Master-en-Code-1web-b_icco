@@ -20,6 +20,7 @@ const sumaFlechaLarga = (parametro1, parametro2) => {
   return resultado;
 }; /* EJEMPLO DE FUNCION FLECHA CON MAS DE UNA LINEA */
 
+/* ES6 FUNCIÓN FLECHA CORTA */
 const sumaFlechaCorta = (parametro1, parametro2) => parametro1 + parametro2;
 //Se puede omitir el return y las llaves {} si es una sola línea de programación después de la flecha. RETURN IMPLÍCITO
 

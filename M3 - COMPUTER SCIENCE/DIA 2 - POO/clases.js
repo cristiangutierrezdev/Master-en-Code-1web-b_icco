@@ -12,7 +12,8 @@ class Persona {
 /* Crear una instancia de la clase Persona */
 let persona1 = new Persona("Moises", 25, "Masculino", "Fricase");
 let persona2 = new Persona("Sarina", 23, "Femenino", "Porotos");
-
+// console.log(persona1);
+// console.log(persona2);
 /*------------------- Clase Futbolista------------------- */
 
 class Futbolista {
@@ -53,6 +54,7 @@ let consola1 = new Consola(
   "1 TB",
   "1080p o en 4K"
 );
+
 let consola2 = new Consola(
   "XBOX",
   "Microsoft",
@@ -71,3 +73,5 @@ let consola3 = new Consola(
 );
 
 console.log(consola1);
+console.log(consola2);
+console.log(consola3);
