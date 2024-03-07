@@ -19,9 +19,9 @@
     ></script>
 
     <!-- MI CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
     <!-- MI JS -->
-    <script defer src="./main.js"></script>
+    <script defer type="module" src="./main.js"></script>
 
     <title>DEV.F Market</title>
   </head>
@@ -78,8 +78,15 @@
 
     <header>
       <!-- FORMULARIO DE PRODUCTOS -->
+
       <form action="">
-        <h2>Crea un producto</h2>
+        <h2>Crea un producto:</h2>
+        <select class="form-select mb-3" aria-label="Default select example">
+          <option selected>Selecciona un producto a crear</option>
+          <option value="1">Celular</option>
+          <option value="2">Videojuego</option>
+          <option value="3">Tv</option>
+        </select>
         <div class="d-flex gap-4">
           <div class="form-floating mb-3">
             <input

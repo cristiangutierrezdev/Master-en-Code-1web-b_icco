@@ -1,45 +1,24 @@
-/* Crear las clases que nos piden -- producto, tipo producto, carrito */
+import { Mobile } from "./src/models/Models.js";
+import {
+  formValues,
+  onChangeInput,
+} from "./src/assets/controllers/inputController.js";
+/* CONSTANTE QUE GUARDARÁ LOS PRODUCTOS CREADOS */
+const products = [];
 
-class Producto {
-  constructor(precio, stock) {
-    this.precio = precio;
-    this.stock = stock;
-  }
+/*-------------------------------- MANEJO DEL DOM ---------------------------------------*/
 
-  getPrecio() {
-    return this.precio;
-  }
-  getStock() {
-    return this.stock;
-  }
-  setPrecio(nuevoPrecio) {
-    this.precio = nuevoPrecio;
-  }
-  setStock(numero) {
-    this.stock = this.stock + numero;
-  }
-}
+let precioInput = document.getElementById("precio");
+let stockInput = document.getElementById("stock");
+let marcaInput = document.getElementById("marca");
+let modeloInput = document.getElementById("modelo");
+let ramInput = document.getElementById("ram");
+let almacenamientoInput = document.getElementById("almacenamiento");
+let camaraInput = document.getElementById("camara");
+let imagenInput = document.getElementById("imagen");
+let createBtn = document.getElementById("create-btn");
+let productsContainer = document.getElementById("products-container");
 
-class Celular extends Producto {
-  constructor(
-    precio,
-    stock,
-    marca,
-    modelo,
-    ram,
-    almacenamiento,
-    camara,
-    imagen
-  ) {
-    super(precio, stock);
-    this.marca = marca;
-    this.modelo = modelo;
-    this.ram = ram;
-    this.almacenamiento = almacenamiento;
-    this.camara = camara;
-    this.imagen = imagen;
-  }
-}
 /* -------------------Función que crea tarjetas de productos en el html-------------------- */
 const showProducts = (products) => {
   let productsHTML = "";
@@ -64,9 +43,8 @@ const showProducts = (products) => {
 };
 
 /* -------------------Función que crea una nueva instancia-------------------- */
-
 const createNewProduct = (product) => {
-  let newProduct = new Celular(
+  let newProduct = new Mobile(
     product.precio,
     product.stock,
     product.marca,
@@ -82,26 +60,7 @@ const createNewProduct = (product) => {
   showProducts(products);
 };
 
-/*-------------------------------- MANEJO DEL DOM ---------------------------------------*/
-const products = [];
-
-let precioInput = document.getElementById("precio");
-let stockInput = document.getElementById("stock");
-let marcaInput = document.getElementById("marca");
-let modeloInput = document.getElementById("modelo");
-let ramInput = document.getElementById("ram");
-let almacenamientoInput = document.getElementById("almacenamiento");
-let camaraInput = document.getElementById("camara");
-let imagenInput = document.getElementById("imagen");
-let createBtn = document.getElementById("create-btn");
-let productsContainer = document.getElementById("products-container");
-
-let formValues = {}; //Aqui iran los valores del formulario
-
-function onChangeInput(event) {
-  formValues = { ...formValues, [event.target.id]: event.target.value };
-  console.log(formValues);
-}
+/* -------------------Funciones de eventos-------------------- */
 
 precioInput.addEventListener("change", (event) => {
   onChangeInput(event);
