@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header{
+ display: flex;
+ justify-content: center;
+ padding: 2rem ;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 25rem;
+}
+
+#products-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
