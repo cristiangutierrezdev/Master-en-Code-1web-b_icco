@@ -1,0 +1,6 @@
+[
+  { "nombre": "Mali", "password": "1234", "saldo": 200 },
+  { "nombre": "Gera", "password": "1234", "saldo": 290 },
+  { "nombre": "Maui", "password": "1234", "saldo": 67 },
+  { "nombre": "Lautaro", "password": "1234", "saldo": 120 }
+]

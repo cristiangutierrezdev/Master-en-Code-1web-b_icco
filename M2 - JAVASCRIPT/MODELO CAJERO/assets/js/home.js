@@ -1,58 +1,59 @@
-let usuarioLogueado = JSON.parse(localStorage.getItem("usuarioLogueado"))//=> busco el usuario guardado en el navegador
+import {
+  ingresarDinero,
+  retirarDinero,
+  consultarSaldo,
+} from "./controllers/controllers.js";
 
-const tituloBienvenida = document.getElementById("tituloBienvenida")
-const logoutButton = document.getElementById("logout")
+let usuarioLogueado = JSON.parse(localStorage.getItem("usuarioLogueado"));
 
+const tituloBienvenida = document.getElementById("tituloBienvenida");
+const logoutButton = document.getElementById("logout");
+const consultarSaldoBtn = document.getElementById("consultar");
+const retirarSaldoBtn = document.getElementById("retirar");
+const ingresarSaldoBtn = document.getElementById("ingresar");
+const resultadoSection = document.getElementById("resultado-operacion");
 
-tituloBienvenida.innerHTML += usuarioLogueado.nombre
+/* BANNER DE BIENVENIDA AL USUARIO */
+tituloBienvenida.innerHTML += usuarioLogueado.nombre;
 
-logoutButton.addEventListener("click", function(){
-    localStorage.removeItem("usuarioLogueado")// elimino el usuario de la memoria del navegador
-    window.location= "./index.html"// ME DIRIGE A OTRA PARTE DE MI SITIO, EJ, OTRO HTML
+logoutButton.addEventListener("click", function () {
+  localStorage.removeItem("usuarioLogueado"); // elimino el usuario de la memoria del navegador
+  window.location = "./index.html"; // ME DIRIGE A OTRA PARTE DE MI SITIO, EJ, OTRO HTML
+});
 
+consultarSaldoBtn.addEventListener("click", function () {
+  let saldoActual = consultarSaldo(usuarioLogueado);
+  resultadoSection.innerHTML = `Tu saldo actual es de  $${saldoActual}`;
+});
 
-})
+retirarSaldoBtn.addEventListener("click", function () {
+  let montoRetiro = Number(prompt("Ingrese el monto a retirar"));
+  let saldoActual = consultarSaldo(usuarioLogueado);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*2- CONSULTAR SALDO => DEBE LEER Y MOSTRAR EL SALDO DEL USUARIO REGISTRADO  */
-function consultarSaldo(usuario) {
-    /* la función debe retornar el saldo del usuario , EJ: usuarioRegistrado = { nombre: "Lautaro", password: 123457, saldo: 120 }, */
-    return usuario.saldo;
+  if (saldoActual - montoRetiro < 0) {
+    return alert("NO PUEDES RETIRAR UNA CANTIDAD MAYOR A TU SALDO");
   }
-  
-  /*3- INGRESAR DINERO */
-  function ingresarDinero(monto) {
-    let saldoDelUsuario = consultarSaldo(usuarioRegistrado);
+
+  let usuarioModificado = retirarDinero(usuarioLogueado, montoRetiro);
+
+  localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioModificado));
+  usuarioLogueado = JSON.parse(localStorage.getItem("usuarioLogueado"));
+
+  resultadoSection.innerHTML = `Retiraste $${montoRetiro}, Tu saldo actual es de  $${usuarioLogueado.saldo}`;
+});
+
+ingresarSaldoBtn.addEventListener("click", function () {
+  let montoIngreso = Number(prompt("Ingrese el monto a retirar"));
+  let saldoActual = consultarSaldo(usuarioLogueado);
+
+  if (saldoActual + montoIngreso > 1001) {
+    return alert("NO PUEDES TENER MAS DE $1001 EN TU CUENTA");
   }
-  
-  /*4- RETIRAR DINERO */
-  function retirarDinero(monto) {
-    let saldoDelUsuario = consultarSaldo(usuarioRegistrado);
-  }
+
+  let usuarioModificado = ingresarDinero(usuarioLogueado, montoIngreso);
+
+  localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioModificado));
+  usuarioLogueado = JSON.parse(localStorage.getItem("usuarioLogueado"));
+
+  resultadoSection.innerHTML = `Ingresaste $${montoIngreso}, Tu saldo actual es de  $${usuarioLogueado.saldo}`;
+});

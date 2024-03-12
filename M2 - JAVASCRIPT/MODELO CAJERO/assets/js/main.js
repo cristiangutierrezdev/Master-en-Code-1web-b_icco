@@ -1,12 +1,8 @@
+import cuentas from "../data/users.json" assert {type: 'json'}
+
 /* LOGIN */
 /* Que al ingresar un usuario y contraseña me dirija a la página del cajero */
 /* Debo declarar usuarios (3) */
-const cuentas = [
-  { nombre: "Mali", password: "1234", saldo: 200 },
-  { nombre: "Gera", password: "1234", saldo: 290 },
-  { nombre: "Maui", password: "1234", saldo: 67 },
-  { nombre: "Lautaro", password: "1234", saldo: 120 },
-];
 let usuarioRegistrado = null; //Variable para modificar con el usuario que ingrese , EJ:  { nombre: "Lautaro", password: 123457, saldo: 120 },
 
 /* 1- LOGIN DE USUARIO => COMPARAR USUARIO Y CONTRASEÑA */
@@ -20,7 +16,7 @@ function login(usuario, password) {
   return usuarioEncontrado;
 }
 
-/* --------MANEJO DEL DOM------------------------ */
+/* ------------MANEJO DEL DOM------------------------ */
 const usuario = document.getElementById("usuario");
 const password = document.getElementById("password");
 const loginButton = document.getElementById("login");
@@ -44,14 +40,9 @@ loginButton.addEventListener("click", function (event) {
   usuarioRegistrado = login(usuarioIngresado, passwordIngresado);
 
   if (usuarioRegistrado) {
-    localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioRegistrado));//setearme en la memoria del navegador el usuario
-    window.location= "./home.html"// ME DIRIGE A OTRA PARTE DE MI SITIO, EJ, OTRO HTML
-   
+    localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioRegistrado)); //setearme en la memoria del navegador el usuario
+    window.location = "./home.html"; // ME DIRIGE A OTRA PARTE DE MI SITIO, EJ, OTRO HTML
   } else {
     alert("Usuario o contraseña incorrectos");
   }
 });
-
-console.log("HAY USUARIO REGISTRADO??????????????????????", usuarioRegistrado);
-
-
