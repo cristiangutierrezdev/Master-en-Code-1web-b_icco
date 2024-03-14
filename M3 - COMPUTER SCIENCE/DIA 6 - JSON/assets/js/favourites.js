@@ -15,7 +15,6 @@ if (movies.length) {
                         <li class="list-group-item">Lanzamiento: ${movie.lanzamiento}</li>
                         <li class="list-group-item">Duración: ${movie.duracion}</li>
                         <li class="list-group-item">Director: ${movie.director}</li>
-                       <
                     </ul>
                     <div class="card-body">
                         <a href="#" class="card-link">Ver Película</a>
