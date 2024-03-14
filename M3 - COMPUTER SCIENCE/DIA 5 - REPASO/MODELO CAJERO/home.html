@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="./assets/css/homeStyles.css" />
+    <!-- Javascript propio con defer, ELIGO EL JS DEL ARCHIVO HOME.JS=> que se ejecute cuando el DOM ESTE CARGADO POR COMPLETO-->
+    <script defer type="module" src="./assets/js/home.js"></script>
+
+    <title>HOME</title>
+  </head>
+  <body>
+    <nav>
+      <span>Banco DEV.F</span>
+      <button id="logout">Cerrar sesión</button>
+    </nav>
+    <header>
+      <h1 id="tituloBienvenida">Bienvenido</h1>
+    </header>
+
+    <main>
+      <section id="button-container">
+        <button id="consultar">Consultar Saldo</button>
+        <button id="retirar">Retirar Saldo</button>
+        <button id="ingresar">Ingresar Saldo</button>
+      </section>
+
+      <section id="resultado-operacion">
+        ......AQUI VA EL RESULTADO.........
+      </section>
+    </main>
+  </body>
+</html>

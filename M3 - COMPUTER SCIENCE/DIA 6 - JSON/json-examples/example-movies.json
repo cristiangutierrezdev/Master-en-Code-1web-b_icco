@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Harry Potter",
+    "actors": ["Daniel Radclife", "Emma Watson"],
+    "description": "lorem ipsum description",
+    "duration": 123
+  },
+  {
+    "title": "Harry Potter 2",
+    "actors": ["Daniel Radclife", "Emma Watson"],
+    "description": "lorem ipsum description",
+    "duration": 123
+  }
+]

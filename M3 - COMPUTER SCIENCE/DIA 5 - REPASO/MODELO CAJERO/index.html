@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="./assets/css/indexStyles.css" />
+    <!-- Javascript propio con defer=> que se ejecute cuando el DOM ESTE CARGADO POR COMPLETO-->
+    <script defer type="module" src="./assets/js/main.js"></script>
+
+    <title>Bienvenido al banco</title>
+  </head>
+  <body>
+    <nav>
+      <span>Banco DEV.F</span>
+    </nav>
+    <header>
+      <h1>Bienvenido al cajero automático</h1>
+    </header>
+    <main>
+      <form>
+        <h3>Iniciar sesión</h3>
+
+        <div>
+          <label for="usuario">Usuario</label>
+          <input id="usuario" type="text" />
+
+          <label for="password">Contraseña</label>
+          <input id="password" type="password" />
+        </div>
+
+        <button id="login">Ingresar</button>
+      </form>
+    </main>
+    <footer>Hecho para alumnos de DEV.F</footer>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+[
+  {
+    "titulo": "El Padrino",
+    "duracion": "175 minutos",
+    "actores": ["Marlon Brando", "Al Pacino", "James Caan"],
+    "imagen": "https://cdn.sincroguia.tv/uploads/programs/e/l/-/el-padrino-poster-2981_SPA-17_V.jpg",
+    "director": "Francis Ford Coppola",
+    "lanzamiento": "1972",
+    "resumen": "La historia de la poderosa familia Corleone y cómo su imperio criminal se ve amenazado por la guerra entre bandas."
+  },
+  {
+    "titulo": "El Mago de Oz",
+    "duracion": "101 minutos",
+    "actores": ["Judy Garland", "Ray Bolger", "Jack Haley"],
+    "imagen": "https://es.web.img2.acsta.net/pictures/14/04/02/11/44/157777.jpg",
+    "director": "Victor Fleming",
+    "lanzamiento": "1939",
+    "resumen": "Dorothy, una niña de Kansas, es transportada a la mágica tierra de Oz donde debe encontrar al Mago para regresar a casa."
+  },
+  {
+    "titulo": "Ciudadano Kane",
+    "duracion": "199 minutos",
+    "actores": ["Orson Welles", "Joseph Cotten", "Dorothy Comingore"],
+    "imagen": "https://es.web.img3.acsta.net/pictures/14/02/13/13/45/093063.jpg",
+    "director": "Orson Welles",
+    "lanzamiento": "1941",
+    "resumen": "Un retrato complejo de Charles Foster Kane, un magnate de la prensa, a través de la mirada de diferentes personas que lo conocieron."
+  },
+  {
+    "titulo": "Pulp Fiction",
+    "duracion": "154 minutos",
+    "actores": ["John Travolta", "Samuel L. Jackson", "Uma Thurman"],
+    "imagen": "https://cdn.sincroguia.tv/uploads/programs/e/l/-/el-padrino-poster-2981_SPA-17_V.jpg",
+    "director": "Quentin Tarantino",
+    "lanzamiento": "1994",
+    "resumen": "Una serie de historias entrecruzadas que exploran el mundo criminal de Los Ángeles con humor negro y violencia gráfica."
+  },
+  {
+    "titulo": "Cadena Perpetua",
+    "duracion": "142 minutos",
+    "actores": ["Tim Robbins", "Morgan Freeman", "Bob Gunton"],
+    "imagen": "https://cdn.sincroguia.tv/uploads/programs/e/l/-/el-padrino-poster-2981_SPA-17_V.jpg",
+    "director": "Frank Darabont",
+    "lanzamiento": "1994",
+    "resumen": "La historia de Andy Dufresne, un hombre condenado por un crimen que no cometió, y su búsqueda de redención en la cárcel."
+  },
+  {
+    "titulo": "Casablanca",
+    "duracion": "102 minutos",
+    "actores": ["Humphrey Bogart", "Ingrid Bergman", "Paul Henreid"],
+    "imagen": "https://cdn.sincroguia.tv/uploads/programs/e/l/-/el-padrino-poster-2981_SPA-17_V.jpg",
+    "director": "Michael Curtiz",
+    "lanzamiento": "1942",
+    "resumen": "Un clásico drama romántico ambientado en la Segunda Guerra Mundial, donde un hombre debe elegir entre su amor por una mujer y su deber de ayudar a su esposo a escapar de los nazis."
+  },
+  {
+    "titulo": "El Padrino II",
+    "duracion": "202 minutos",
+    "actores": ["Al Pacino", "Robert De Niro", "Diane Keaton"],
+    "imagen": "https://cdn.sincroguia.tv/uploads/programs/e/l/-/el-padrino-poster-2981_SPA-17_V.jpg",
+    "director": "Francis Ford Coppola",
+    "lanzamiento": "1974",
+    "resumen": "Continúa la historia de la familia Corleone, mostrando el ascenso de Michael al poder y las consecuencias de sus decisiones."
+  },
+  {
+    "titulo": "E.T. el Extraterrestre",
+    "duracion": "128 minutos",
+    "actores": ["Henry Thomas", "Drew Barrymore", "Dee Wallace"],
+    "imagen": "https://cdn.sincroguia.tv/uploads/programs/e/l/-/el-padrino-poster-2981_SPA-17_V.jpg",
+    "director": "Steven Spielberg",
+    "lanzamiento": "1982",
+    "resumen": "La historia de un niño que se hace amigo de un extraterrestre que se ha quedado varado en la Tierra."
+  },
+  {
+    "titulo": "Star Wars: Episodio IV - Una Nueva Esperanza",
+    "duracion": "121 minutos",
+    "actores": ["Mark Hamill", "Harrison Ford", "Carrie Fisher"],
+    "imagen": "https://cdn.sincroguia.tv/uploads/programs/e/l/-/el-padrino-poster-2981_SPA-17_V.jpg"
+  }
+]
