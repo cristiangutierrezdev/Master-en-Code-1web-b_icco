@@ -1,0 +1,61 @@
+.header {
+  background-image: url("../../assets/header_background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 40px;
+}
+
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.header__logo-container {
+  width: 100px;
+}
+
+.header__menu {
+  display: flex;
+  list-style: none;
+}
+.header__link-item {
+  margin: 0 5px;
+}
+
+.header__link {
+  color: white;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  text-decoration: underline;
+}
+
+.header__title-container {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__title {
+  text-align: center;
+  font-size: 28px;
+  color: white;
+}
+
+.header__register-button {
+  background-color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+.header__register-button:hover{
+  cursor: pointer;
+  background-color: #c2c2c2;
+}
