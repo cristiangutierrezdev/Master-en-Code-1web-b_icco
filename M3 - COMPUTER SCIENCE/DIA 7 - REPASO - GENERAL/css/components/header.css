@@ -21,7 +21,7 @@
   list-style: none;
 }
 .header__link-item {
-  margin: 0 5px;
+  margin: 0 10px;
 }
 
 .header__link {
@@ -43,7 +43,8 @@
 
 .header__title {
   text-align: center;
-  font-size: 28px;
+  font-size: 22px;
+  font-weight: 400;
   color: white;
 }
 
