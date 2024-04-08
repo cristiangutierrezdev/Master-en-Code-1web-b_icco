@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/pages/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__navbar">
+        <a class="header__logo-container" href="#">
+          <img class="header__logo-img" src="./assets/logo.png" alt="" />
+        </a>
+
+        <ul class="header__menu">
+          <li class="header__link-item">
+            <a href="#" class="header__link">Home</a>
+          </li>
+          <li class="header__link-item">
+            <a href="#" class="header__link">Places</a>
+          </li>
+          <li class="header__link-item">
+            <a href="#" class="header__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title-container">
+        <h1 class="header__title">
+          Our destination is never a place, but a new way of seeing things
+        </h1>
+
+        <button class="header__register-button" type="button">
+          Register Now
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main__places">
+        <h2 class="main__places-title">Visit Fantastic Places</h2>
+        <hr class="main__places-title-underline" />
+
+        <div class="main__filter">
+          <span class="main__places-filter main--filter-active">Places</span>
+          <span class="main__filter-divider">|</span>
+          <span class="main__favorites-filter">Favorites</span>
+        </div>
+
+        <section class="main__cards">
+          <article class="main__card">
+            <div class="main__card-img-container">
+              <img class="main__card-img" src="./assets/brazil.jpg" alt="" />
+            </div>
+            <div class="main__card-body">
+              <h3 class="main__card-title">Brazil</h3>
+              <p class="main__card-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                perspiciatis ea iusto nostrum officiis ratione quibusdam optio,
+                magnam aut? Tempore, ex! Sunt eligendi molestiae atque vitae
+                totam, commodi explicabo ipsam.
+              </p>
+              <div class="main__card-buttons">
+                <button class="main__card-btn" type="button">
+                  Visit place
+                </button>
+                <button class="main__card-btn main--btn-outline" type="button">
+                  Add to Favorites
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="main__card">
+            <div class="main__card-img-container">
+              <img class="main__card-img" src="./assets/portugal.jpg" alt="" />
+            </div>
+            <div class="main__card-body">
+              <h3 class="main__card-title">Portugal</h3>
+              <p class="main__card-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                perspiciatis ea iusto nostrum officiis ratione quibusdam optio.
+              </p>
+              <div class="main__card-buttons">
+                <button class="main__card-btn" type="button">
+                  Visit place
+                </button>
+                <button class="main__card-btn main--btn-outline" type="button">
+                  Add to Favorites
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="main__card">
+            <div class="main__card-img-container">
+              <img class="main__card-img" src="./assets/mexico.jpg" alt="" />
+            </div>
+            <div class="main__card-body">
+              <h3 class="main__card-title">Mexico</h3>
+              <p class="main__card-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                perspiciatis ea iusto nostrum officiis ratione quibusdam optio,
+                magnam aut? Tempore, ex! Sunt eligendi molestiae atque.
+              </p>
+              <div class="main__card-buttons">
+                <button class="main__card-btn" type="button">
+                  Visit place
+                </button>
+                <button class="main__card-btn main--btn-outline" type="button">
+                  Add to Favorites
+                </button>
+              </div>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+    <script src="./js/repaso-basico.js"></script>
+    <script src="./js/repaso-objetos.js"></script>
+  </body>
+</html>
