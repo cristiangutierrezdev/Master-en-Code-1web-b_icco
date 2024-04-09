@@ -1,0 +1,56 @@
+.modal {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.modal__content {
+  position: relative;
+  width: 900px;
+  background-color: #FFF;
+  padding: 50px 50px 80px;
+}
+
+.modal__title {
+  text-align: center;
+}
+
+.modal__body {
+  display: flex;
+  margin-top: 30px;
+  column-gap: 20px;
+}
+
+.modal__image-container {
+  width: 60%;
+}
+
+.modal__description {
+  width: 40%;
+}
+
+.modal__image {
+  aspect-ratio: 2/1;
+  object-fit: cover;
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 24px;
+}
+
+.modal__close:hover {
+  cursor: pointer;
+}
+
+.modal--open {
+  display: flex;
+}

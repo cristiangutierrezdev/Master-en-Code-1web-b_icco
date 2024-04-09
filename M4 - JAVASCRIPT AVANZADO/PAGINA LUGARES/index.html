@@ -48,74 +48,22 @@
           <span class="main__favorites-filter">Favorites</span>
         </div>
 
-        <section class="main__cards">
-          <article class="main__card">
-            <div class="main__card-img-container">
-              <img class="main__card-img" src="./assets/brazil.jpg" alt="" />
-            </div>
-            <div class="main__card-body">
-              <h3 class="main__card-title">Brazil</h3>
-              <p class="main__card-paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                perspiciatis ea iusto nostrum officiis ratione quibusdam optio,
-                magnam aut? Tempore, ex! Sunt eligendi molestiae atque vitae
-                totam, commodi explicabo ipsam.
-              </p>
-              <div class="main__card-buttons">
-                <button class="main__card-btn" type="button">
-                  Visit place
-                </button>
-                <button class="main__card-btn main--btn-outline" type="button">
-                  Add to Favorites
-                </button>
-              </div>
-            </div>
-          </article>
-          <article class="main__card">
-            <div class="main__card-img-container">
-              <img class="main__card-img" src="./assets/portugal.jpg" alt="" />
-            </div>
-            <div class="main__card-body">
-              <h3 class="main__card-title">Portugal</h3>
-              <p class="main__card-paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                perspiciatis ea iusto nostrum officiis ratione quibusdam optio.
-              </p>
-              <div class="main__card-buttons">
-                <button class="main__card-btn" type="button">
-                  Visit place
-                </button>
-                <button class="main__card-btn main--btn-outline" type="button">
-                  Add to Favorites
-                </button>
-              </div>
-            </div>
-          </article>
-          <article class="main__card">
-            <div class="main__card-img-container">
-              <img class="main__card-img" src="./assets/mexico.jpg" alt="" />
-            </div>
-            <div class="main__card-body">
-              <h3 class="main__card-title">Mexico</h3>
-              <p class="main__card-paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                perspiciatis ea iusto nostrum officiis ratione quibusdam optio,
-                magnam aut? Tempore, ex! Sunt eligendi molestiae atque.
-              </p>
-              <div class="main__card-buttons">
-                <button class="main__card-btn" type="button">
-                  Visit place
-                </button>
-                <button class="main__card-btn main--btn-outline" type="button">
-                  Add to Favorites
-                </button>
-              </div>
-            </div>
-          </article>
-        </section>
+        <section id="main__cards" class="main__cards"></section>
       </section>
     </main>
-    <script src="./js/repaso-basico.js"></script>
-    <script src="./js/repaso-objetos.js"></script>
+
+    <section id="modal" class="modal">
+      <article class="modal__content">
+        <span id="modal__close" class="modal__close">X</span>
+        <h2 id="modal__title" class="modal__title"></h2>
+        <div class="modal__body">
+          <div class="modal__image-container">
+            <img id="modal__image" class="modal__image" src="" alt="" />
+          </div>
+          <p id="modal__description" class="modal__description"></p>
+        </div>
+      </article>
+    </section>
+    <script src="./js/index.js"></script>
   </body>
 </html>
