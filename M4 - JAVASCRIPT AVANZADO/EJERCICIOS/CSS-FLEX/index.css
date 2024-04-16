@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.div-ejemplo {
+  display: block;
+}
+
+.link {
+  display: block;
+}
+
+.padre {
+  display: flex;
+  /* flex-direction Controlamos el comportamiento de los hijos, ejmplo: si quiero que sean como
+  display block utilizo el valor column, si quiero que se comporten como inline-block utilizo el valor row */
+  flex-direction: row;
+  /* justify-content  Controlamos los hijos horizontalmente si tiene flex-direction: row, si es flex-direction: column, controla los elementos veticalmente (se invirte su funcionalidad) */
+  justify-content: space-around;
+   /* align-items Controlamos los hijos verticalmente si tiene flex-direction: row, si es flex-direction: column, controla los elementos horizontalmente (se invirte su funcionalidad) */
+  align-items: center;
+  height: 500px;
+}
