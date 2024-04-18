@@ -1,0 +1,21 @@
+@import url(grid.css);
+/* @import url(alineacion.css); */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin: 20px;
+}
+.contenedor-padre{
+    border: 2px solid black;
+    width: 90%;
+    margin: auto;
+}
+.contenedor-padre .celdas{
+    border: 1px solid black;
+    text-align: center;
+}
