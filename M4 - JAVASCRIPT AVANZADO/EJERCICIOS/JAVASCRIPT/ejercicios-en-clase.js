@@ -10,6 +10,7 @@
 function popcornTime(totalKernels) {
   // Bucle para hacer el popcorn
   for (let i = 0; i < totalKernels; i++) {
+    console.log(i);
     console.log("¡Pop!");
   }
 
@@ -18,7 +19,7 @@ function popcornTime(totalKernels) {
 }
 
 // Llama a la función con el total de granos de maíz
-popcornTime(20); // Ajusta el número de granos según sea necesario
+// popcornTime(20); // Ajusta el número de granos según sea necesario
 
 // Desafío: Contar hasta Números Divertidos
 // En este desafío, vas a escribir una función llamada countFunnyNumbers que tomará un número entero como entrada y contará desde 1 hasta ese número. Sin embargo, cada vez que encuentres un número que sea múltiplo de 3, en lugar de imprimir el número, imprimirás "¡Divertido!". Si el número es múltiplo de 5, imprimirás "¡Genial!" en su lugar. Y si el número es múltiplo de ambos, imprimirás "¡Divertido y Genial!".
@@ -43,7 +44,7 @@ function countFunnyNumbers(limit) {
   }
 }
 
-// Ejecuta la función con diferentes valores de limit
+// // Ejecuta la función con diferentes valores de limit
 console.log("Contando hasta 15:");
 countFunnyNumbers(15);
 console.log("\nContando hasta 30:");

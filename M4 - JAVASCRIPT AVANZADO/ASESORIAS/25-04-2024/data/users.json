@@ -1,0 +1,6 @@
+[
+  { "email": "john@email.com", "password": "1234", "saldo": 200 },
+  { "email": "jane@email.com", "password": "1234", "saldo": 290 },
+  { "email": "jhin@email.com", "password": "1234", "saldo": 67 },
+  { "email": "joe@email.com", "password": "1234", "saldo": 120 }
+]
