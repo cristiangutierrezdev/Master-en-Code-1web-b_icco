@@ -20,6 +20,8 @@ const inputNumero1 = document.querySelector("#numero1");
 const inputNumero2 = document.querySelector("#numero2");
 const btnSumar = document.querySelector("#btn-sumar");
 const btnRestar = document.querySelector("#btn-restar");
+const btnMultiplicar = document.querySelector("#btn-multiplicar");
+const btnDividir = document.querySelector("#btn-dividir");
 
 function sumar(numero1, numero2) {
   return numero1 + numero2;
@@ -27,6 +29,14 @@ function sumar(numero1, numero2) {
 
 function restar(numero1, numero2) {
   return numero1 - numero2;
+}
+
+function multiplicar(numero1, numero2){
+  return numero1 * numero2
+}
+
+function dividir(numero1, numero2){
+  return numero1 / numero2
 }
 
 function calcularYMostrar(funcionDeCalculo) {
@@ -43,6 +53,12 @@ btnSumar.onclick = function () {
 
 btnRestar.onclick = function () {
   calcularYMostrar(restar)
+}
+btnMultiplicar.onclick = function () {
+  calcularYMostrar(multiplicar)
+}
+btnDividir.onclick = function () {
+  calcularYMostrar(dividir)
 }
 
 const arreglo = [2,3,4]
