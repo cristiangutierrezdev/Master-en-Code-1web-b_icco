@@ -7,7 +7,8 @@ const poderInput = document.querySelector("#poder");
 const urlImgInput = document.querySelector("#img");
 const edadInput = document.querySelector("#edad");
 const btnEliminar = document.querySelector("#btn-eliminar");
-
+const btnModificar = document.querySelector("#btn-modificar");
+const idInput = document.querySelector("#id-unicornio");
 
 function primerCallback(resultado) {
   // resultado.json() tambien es una promesa, lo que significa que se toma un
@@ -21,6 +22,7 @@ function segundoCallback(resultado) {
 
 function atraparErrorCallback(error) {
   alert("Hubo un error, por favor intentalo mas tarde");
+  console.log(error);
 }
 
 function obtenerDatos() {
@@ -57,6 +59,7 @@ function crearUnicornio() {
 }
 
 function eliminarUnicornio() {
+  const idUnicornio = idInput.value
   const config = {
     method: "DELETE",
     headers: {
@@ -64,7 +67,7 @@ function eliminarUnicornio() {
     },
   };
 
-  fetch(`${urlBase}/unicorns/66343aeae64259c249ec4f81`, config)
+  fetch(`${urlBase}/unicorns/${idUnicornio}`, config)
   .then(primerCallback)
   .then(function (resultado) {
     console.log("Se eliminó el unicornio", resultado);
@@ -72,8 +75,35 @@ function eliminarUnicornio() {
   .catch(atraparErrorCallback);
 }
 
+function modificarUnicornio() {
+  const idUnicornio = idInput.value
+  const data = {
+    name: nombreInput.value,
+    power: poderInput.value,
+    image: urlImgInput.value,
+    age: edadInput.value,
+  };
+
+  // Utilizamos Fetch con peticion POST
+  const config = {
+    method: "PUT",
+    body: JSON.stringify(data),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  };
+
+  fetch(`${urlBase}/unicorns/${idUnicornio}`, config)
+    .then(primerCallback)
+    .then(function (resultado) {
+      console.log("Se modificó el unicornio", resultado);
+    })
+    .catch(atraparErrorCallback);
+}
+
 btn.addEventListener("click", obtenerDatos);
 btnCrear.addEventListener("click", crearUnicornio);
 btnEliminar.addEventListener("click", eliminarUnicornio)
+btnModificar.addEventListener("click", modificarUnicornio)
 
 obtenerDatos();
