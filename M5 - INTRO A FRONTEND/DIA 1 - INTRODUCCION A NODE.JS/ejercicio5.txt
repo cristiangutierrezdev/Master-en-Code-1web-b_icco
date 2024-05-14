@@ -1,0 +1,15 @@
+Ejercicio de Promedio de Notas:
+
+Instrucciones:
+1- Define como variable un arreglo con notas de un estudiante.
+1- Escribe una función llamada calcularPromedio que tome el arreglo de notas como argumento y devuelva el promedio de esas notas.
+2- La función debe calcular el promedio de las notas sumando todos los elementos del arreglo y dividiendo la suma por el número total de elementos.
+3- Si el arreglo está vacío, la función debe devolver "no hay notas para promediar".
+
+Pasos a seguir:
+
+1- Define una función llamada calcularPromedio que tome un parámetro notas.
+2- Dentro de la función, verifica si el arreglo notas está vacío. Si lo está, devuelve "no hay notas para promediar".
+3- Si el arreglo no está vacío, calcula la suma de todas las notas.
+4- Calcula el promedio dividiendo la suma total por la longitud del arreglo notas.
+5- Devuelve el promedio calculado.

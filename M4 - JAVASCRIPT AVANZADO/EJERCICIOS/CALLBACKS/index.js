@@ -11,7 +11,7 @@
 //   console.log("El nombre es John Doe");
 // }
 
-// activaUnaFuncion(mostrarMensaje)
+// activaUnaFuncion(mostrarNombre)
 
 // ----------------------------------------------------------------
 

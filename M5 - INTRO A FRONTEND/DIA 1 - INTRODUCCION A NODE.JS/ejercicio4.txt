@@ -1,0 +1,16 @@
+Gestión de Empleados:
+
+Instrucciones:
+
+1- Crea una clase llamada Empleado con las propiedades nombre y salario.
+2- Implementa un método llamado aumentarSalario en la clase Empleado que tome un número como argumento y aumente el salario del empleado en ese porcentaje.
+3- Crea una instancia de la clase Empleado.
+4- Llama al método aumentarSalario con un porcentaje de aumento y muestra el salario actualizado del empleado.
+
+Pasos a seguir:
+
+1- Define la clase Empleado con las propiedades nombre y salario.
+2- Implementa el método aumentarSalario en la clase Empleado.
+3- Crea una instancia de la clase Empleado.
+4- Llama al método aumentarSalario con un porcentaje de aumento y muestra el salario actualizado del empleado.
+5- Muestra en consola el nuevo salario del empleado creado
