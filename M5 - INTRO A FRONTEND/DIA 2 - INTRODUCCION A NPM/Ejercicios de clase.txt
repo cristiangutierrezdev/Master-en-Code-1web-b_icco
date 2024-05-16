@@ -1,0 +1,25 @@
+Ejercicio 1
+
+1. Con todo lo aprendido acerca de AXIOS, crear una funcion que permita actualizar los datos de un unicornio.
+2. Crear una funcion que permita eliminar un unicornio
+
+NOTA:
+Recuerden que para ambos casos, necesitamos el ID del unicornio que queremos modificar o eliminar.
+En caso de que vamos a actualizar el unicornio, tendremos que pasarle los nuevos valores que queremos modificar.
+
+Ejercicio 2
+
+1. Despues de haber creado nuestro CRUD completo, debemos organizar nuestro proyecto de manera modular.
+
+INSTRUCCIONES:
+
+1. Creamos varios archivos js donde les pondremos de nombre, el nombre de la funcion que va a ejecutar, ejemplo obtenerUnicornios.js
+2. Luego de crear los archivos con sus nombres, vamos a copiar el codigo de la funcion dentro de su respectivo archivo js.
+3. Cuando tengamos el codigo en el nuevo archivo, podremos eliminar le codigo de nuestro archivo index.js
+4. Una vez eliminado el codigo y tengamos cada funcion en su respectivo archivo, pasaremos a exportar la funcion para utilizarlas en nuestro archivo index.js
+5. Cuando exportemos las funciones, en nuestro archivo index.js, importaremos las funciones para utilizarlas.
+
+NOTA:
+Para exportar funciones o variables utilizamos la palabra reservada "export default" y el nombre de la funcion o variable.
+Esto solo funciona para exportar un solo dato, si son mas de uno, se exporta con llaves. Ejemplo: "export {funcion1, funcion2}"
+y cuando se exporta con las llaves, se importa de la misma manera. Ejemplo "import {funcion1, funcion2} from "./archivo.js"
