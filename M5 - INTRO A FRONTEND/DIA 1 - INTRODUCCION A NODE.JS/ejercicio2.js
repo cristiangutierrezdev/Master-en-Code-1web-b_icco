@@ -2,7 +2,7 @@
 const nuevoNumero = 11;
 
 function modificarArreglo(unaFuncion, numero){
-    return unaFuncion(miArreglo, numero)
+    return unaFuncion(copiaDeMiArreglo, numero)
 }
 
 function eliminarEnPila(arreglo){
@@ -17,4 +17,5 @@ function agregarElemento(arreglo, numero){
     arreglo.push(numero)
     return arreglo
 }
-console.log(modificarArreglo(eliminarEnCola));
+
+console.log(modificarArreglo(agregarElemento,nuevoNumero));

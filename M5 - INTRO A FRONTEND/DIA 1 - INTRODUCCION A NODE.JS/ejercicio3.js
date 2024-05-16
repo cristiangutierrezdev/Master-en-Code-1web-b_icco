@@ -1,4 +1,4 @@
-// Crear una frase que diga "Hola clase mi nombre es: Brayan y este es el modulo 5" y ejecutarla en consola
+// Crear una frase que diga "Hola clase mi nombre es: "su nombre" y este es el modulo 5" y ejecutarla en consola
 
 const miNombre = "Brayan"
 
