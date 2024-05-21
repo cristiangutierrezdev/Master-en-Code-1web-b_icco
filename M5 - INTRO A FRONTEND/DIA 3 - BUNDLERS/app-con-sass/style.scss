@@ -1,0 +1,12 @@
+@mixin rounded {
+  border-radius: 12px;
+}
+
+.section {
+  background-color: #c2c2c2;
+
+  &__btn {
+    background-color: aquamarine;
+    @include rounded()
+  }
+}
