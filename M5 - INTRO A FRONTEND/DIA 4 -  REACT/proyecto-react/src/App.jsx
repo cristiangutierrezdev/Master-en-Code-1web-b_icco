@@ -1,53 +1,41 @@
+import { useState, useRef } from "react";
 import "./App.css";
-import Button from "./Button"
-
-function Link() {
-  return <a href="#">Click aquí</a>;
-}
-
-const Form = () => {
-  return (
-    <form>
-      <input type="text" />
-      <input type="passwordtext" />
-    </form>
-  );
-};
+import Button from "./Button";
+import Link from "./Link";
+import Form from "./Form";
 
 function App() {
-  const edad = 18;
+  const [numero, setNumero] = useState(1);
+  const [nombre, setNombre] = useState("");
+  // const inputNombre = useRef();
+
+  const aumentarVariable = () => {
+    setNumero(numero + 1);
+  };
+
+  const cambiarNombre = (event) => {
+    setNombre(event.target.value);
+    // setNombre(inputNombre.current.value);
+  };
 
   return (
     <div className="padre">
-      <h1>Hola clase desde H1</h1>
-      <h2>Tu edad es: {edad}</h2>
-      <Link />
+      <h1>Hola {nombre}, bienvenid@ </h1>
+      <h2>Tu edad es: {numero}</h2>
+      {/* <Link />
       <Form />
-      <Button />
+      <Button /> */}
+      <button onClick={aumentarVariable}>Aumentar variable</button>
+      <br />
+      <br />
+      <input
+        // ref={inputNombre}
+        onChange={cambiarNombre}
+        type="text"
+        placeholder="Escribe tu nombre"
+      />
     </div>
   );
 }
 
 export default App;
-
-// Reglas de los componentes
-
-/* 
-1. El nomber de un componente siempre debe empezar
-con la primera letra Mayúscula.
-
-2. La forma de utilizar o llamar un componente es similar a utilizar
-una etiqueta HTML ej:
-
-<MiComponente/>
-
-3. Un componente no debe retornar dos elementos HTML al mismo tiempo
-o al mismo nivel, siempre debe retornar un elemento, este puedes un elemento
-padre de mas etiquetas HTML ej:
-
-<div>
-  <h1>Hola clase desde H1</h1>
-  <h2>Hola clase desde H2</h2>
-</div>
-
-*/
