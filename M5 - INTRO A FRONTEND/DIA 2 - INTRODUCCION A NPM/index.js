@@ -15,10 +15,10 @@ const devf = {
     age: 2
 }
 const newDevf = {
-    age: 6
+    image: "https://img.freepik.com/vector-gratis/lindo-adorable-unicornio-arcoiris_24640-46129.jpg?w=740&t=st=1717628863~exp=1717629463~hmac=ed325e0539ec8694ae89e4d25b710050e9028392621377a699b3076fe4b91894"
 }
 
-// actualizarUnicornio("66456459eeee79f99553bdc0", newDevf)
+// actualizarUnicornio("66452b44eeee79f99553bd7a", newDevf)
 obtenerUnicornios()
 // crearUnicornio(devf)
 // eliminarUnicornio("66456459eeee79f99553bdc0")
