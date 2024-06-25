@@ -11,7 +11,7 @@ function MostrarPerros() {
             .then((res) => {
                 setDatos(res.data.message);
             })
-            .catch(err => { })
+            .catch(err => {console.log(err); })
 
     }, [])
 
