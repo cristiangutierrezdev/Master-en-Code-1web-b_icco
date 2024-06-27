@@ -9,7 +9,8 @@ function useForm(estadoInicial) {
         const copiaFormulario = { ...formulario, [name]: value }
         setFormulario(copiaFormulario);
     }
-    return {formulario, obtenerFormulario}
+
+    return {formulario, obtenerFormulario, setFormulario}
 }
 
 export default useForm
