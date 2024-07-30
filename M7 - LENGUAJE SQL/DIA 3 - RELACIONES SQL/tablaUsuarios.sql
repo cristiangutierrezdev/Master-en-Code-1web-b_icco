@@ -12,7 +12,10 @@ CREATE TABLE alumnos(
 	alumno_apellido VARCHAR(55) NOT NULL,
 	alumno_edad INT NOT NULL,
 	alumno_correo TEXT UNIQUE NOT NULL,
-	alumno_genero GENERO DEFAULT('Otro')
+	alumno_genero GENERO DEFAULT('Otro'),
+--	carrera_id INT REFERENCES carreras(carrera_id)
+--	carrera_id INT,
+--	FOREIGN KEY (carrera_id) REFERENCES carreras(carrera_id)
 );
 
 --Insertamos nuevos registros a la tabla alumnos
@@ -40,7 +43,7 @@ INSERT INTO alumnos(alumno_nombre, alumno_apellido, alumno_edad, alumno_correo, 
 ('Paola', 'Vargas', 23, 'paola.vargas@example.com', 'Femenino');
 
 --mostramos toda la info de la tabla alumnos
-SELECT * FROM alumnos;
+SELECT * FROM alumnos ORDER BY alumno_id;
 
 --Modificamos la tabla para agregarle nuevas columnas
 ALTER TABLE alumnos
@@ -48,3 +51,31 @@ ALTER TABLE alumnos
 
 ALTER TABLE alumnos
 	ADD COLUMN alumno_correo TEXT UNIQUE;
+
+--Agregamos la llave foránea a nuestra tabla alumnos que apunta a la tabla carreras
+
+ALTER TABLE alumnos 
+	ADD COLUMN carrera_id INT REFERENCES carreras(carrera_id);
+
+--Rellenamos la columna Carrera_id
+
+UPDATE alumnos
+	SET carrera_id = 7
+	WHERE alumno_id = 1 OR alumno_id = 11 OR alumno_id = 20;
+
+UPDATE alumnos
+	SET carrera_id = 3
+	WHERE alumno_id = 2 OR alumno_id = 12 OR alumno_id = 19;
+
+UPDATE alumnos
+	SET carrera_id = 4
+	WHERE alumno_id = 3 OR alumno_id = 9 OR alumno_id = 18
+	OR alumno_id = 15;
+
+UPDATE alumnos
+	SET carrera_id = 5
+	WHERE alumno_id = 7 OR alumno_id =6 OR alumno_id = 13;
+
+UPDATE alumnos
+	SET carrera_id = 6
+	WHERE alumno_id = 16 OR alumno_id = 17 OR alumno_id = 14;
