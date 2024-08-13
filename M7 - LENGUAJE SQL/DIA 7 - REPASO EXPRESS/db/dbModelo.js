@@ -1,0 +1,6 @@
+CREATE TABLE usuarios(
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(55) NOT NULL,
+    apellido VARCHAR(55)NOT NULL,
+    creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

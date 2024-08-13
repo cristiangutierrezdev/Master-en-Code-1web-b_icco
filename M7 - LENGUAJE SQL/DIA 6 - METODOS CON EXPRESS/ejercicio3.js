@@ -9,7 +9,7 @@ app.use(express.json());
 let arreglo = [];
 
 app.get("/usuarios", (req, res) => {
-  if (arreglo == "") {
+  if (arreglo === "") {
     res.send("no hay datos");
   } else {
     res.json(arreglo);
@@ -36,8 +36,9 @@ app.get("/usuarios/:id", (req, res) => {
   });
   if (elemento === undefined) {
     res.send("usuario no encontrado");
+  }else{
+    res.json(elemento);
   }
-  res.json(elemento);
 });
 
 app.put("/usuarios/:id", (req, res) => {
