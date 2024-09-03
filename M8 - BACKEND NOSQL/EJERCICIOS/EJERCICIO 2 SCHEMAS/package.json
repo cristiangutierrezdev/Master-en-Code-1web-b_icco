@@ -1,0 +1,18 @@
+{
+  "name": "ejercicio-2-schemas",
+  "version": "1.0.0",
+  "description": "**Vas a crear una API sencilla que permita gestionar una colección de libros. Cada libro tendrá un título, un autor, el número de páginas y el año de publicación. La API permitirá agregar nuevos libros**",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.6.0"
+  }
+}
