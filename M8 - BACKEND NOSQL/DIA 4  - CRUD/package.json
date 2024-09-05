@@ -1,0 +1,18 @@
+{
+  "name": "dia-4---crud",
+  "version": "1.0.0",
+  "description": "**Vas a crear una API que permita gestionar una colección de películas. Cada película tendrá un título, un director, el año de lanzamiento, y una calificación (rating). La API permitirá agregar nuevas películas, obtener la lista de todas las películas y buscar una película por su director.**",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start":"node src/index.js",
+    "dev":"node --watch src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.6.1"
+  }
+}
