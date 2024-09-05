@@ -1,4 +1,4 @@
-# Ejercicio: Gestión de Películas
+# Ejercicio: Gestión de Películas 🍿🎥🎞️
 ## Descripción
 **Vas a crear una API que permita gestionar una colección de películas. Cada película tendrá un título, un director, el año de lanzamiento, y una calificación (rating). La API permitirá agregar nuevas películas, obtener la lista de todas las películas y buscar una película por su director.**
 

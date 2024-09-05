@@ -1,7 +1,10 @@
 import { Router } from "express";
-import { crearUnaPelicula, obtenerTodasLasPeliculas } from "../controllers/peliculas.controllers.js";
+import { actualizarUnaPelicula, crearUnaPelicula, eliminarUnaPelicula, obtenerTodasLasPeliculas, obtenerUnaPelicula } from "../controllers/peliculas.controllers.js";
 
 export const peliculaRouter = Router()
 
-peliculaRouter.get('/', obtenerTodasLasPeliculas)
-peliculaRouter.post('/', crearUnaPelicula)
+peliculaRouter.get('/peliculas', obtenerTodasLasPeliculas)
+peliculaRouter.post('/peliculas', crearUnaPelicula)
+peliculaRouter.delete('/peliculas/:id', eliminarUnaPelicula)
+peliculaRouter.put('/peliculas/:id', actualizarUnaPelicula)
+peliculaRouter.get('/peliculas/:id', obtenerUnaPelicula)
