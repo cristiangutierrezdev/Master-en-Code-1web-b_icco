@@ -1,0 +1,18 @@
+{
+  "name": "ejercicio-3---relaciones",
+  "version": "1.0.0",
+  "description": "**Vas a crear una base de datos para una colección de música, donde cada canción tendrá un nombre, duración, género y un autor. Los autores estarán almacenados en una colección aparte y serán referenciados en la colección de canciones.**",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start":"node src/index.js",
+    "dev":"node --watch src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.6.1"
+  }
+}
