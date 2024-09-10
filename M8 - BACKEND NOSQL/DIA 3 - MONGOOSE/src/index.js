@@ -23,7 +23,9 @@ app.post("/", async (req, res) => {
 
 app.get("/", async (req, res) => {
   try {
-    const result = await Usuario.find()
+    const email = req.query
+    console.log(email);
+    const result = await Usuario.find(email)
     res.json(result)
   } catch (error) {
     res.status(404).sendStatus(404)
