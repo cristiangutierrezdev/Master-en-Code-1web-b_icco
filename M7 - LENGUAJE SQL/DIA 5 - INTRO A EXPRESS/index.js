@@ -32,7 +32,7 @@
 // const __dirname = path.dirname(__filename);
 // const app = express();
 
-//Enviamos al cliente el archivo html que creamos al inicio
+// Enviamos al cliente el archivo html que creamos al inicio
 // app.get("/archivo", (req, res) => {
 //   res.sendFile("./index.html", {
 //     root: __dirname,
@@ -46,7 +46,7 @@
 //   });
 // });
 
-//Enviamos al cliente un video con Express
+// Enviamos al cliente un video con Express
 // app.get("/video", (req, res) => {
 //   res.sendFile("./videos/video.mkv", {
 //     root: __dirname,
