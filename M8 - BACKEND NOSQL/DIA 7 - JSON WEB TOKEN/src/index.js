@@ -34,10 +34,6 @@ function autenticacion(req,res,next){
 }
 
 
-
-
-
-
 //Squema de un usuario
 
 const usuarioSchema = new Schema(
@@ -119,21 +115,12 @@ app.get("/usuario", autenticacion, async(req,res)=>{
 
 
 
-
-
-
-
-
-
 app.use((req,res)=>{
     res.status(404).send("Pagina no encontrada")
 })
 
-
-
 // {llave: valor;llave2: valor;}
 // String, Boolean, Number, [], {}, undefined, null;
-
 
 
 //Conectamos nuestra base de datos a mongoDbAtlas
