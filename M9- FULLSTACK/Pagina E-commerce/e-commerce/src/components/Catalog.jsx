@@ -1,9 +1,8 @@
 import ProductsCard from "./ProductsCard";
 import { data } from "../data";
-
+import Clock from "./clock";
 function Catalog() {
   const products = data;
-
   return (
     <section className="flex flex-col gap-8">
       <div className="flex mt-32 mx-14 items-center gap-4">
@@ -14,37 +13,7 @@ function Catalog() {
         <div className="w-1/5">
           <h5 className="font-semibold text-4xl tracking-wider">Flash Sales</h5>
         </div>
-        <div className=" w-3/5">
-          <ul className="flex gap-8">
-            <li className="flex items-center gap-8 ">
-              <div>
-                <p className="font-medium text-sm">Days</p>
-                <p className="font-bold text-3xl">03</p>
-              </div>
-              <span className="text-2xl text-red-500 font-bold">:</span>
-            </li>
-            <li className="flex items-center gap-8 ">
-              <div>
-                <p className="font-medium text-sm">Hours</p>
-                <p className="font-bold text-3xl">23</p>
-              </div>
-              <span className="text-2xl text-red-500 font-bold">:</span>
-            </li>
-            <li className="flex items-center gap-8 ">
-              <div>
-                <p className="font-medium text-sm">Minutes</p>
-                <p className="font-bold text-3xl">19</p>
-              </div>
-              <span className="text-2xl text-red-500 font-bold">:</span>
-            </li>
-            <li className="flex items-center gap-8 ">
-              <div>
-                <p className="font-medium text-sm">Seconds</p>
-                <p className="font-bold text-3xl">56</p>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <Clock />
         <div className="flex justify-end items-center w-1/5 gap-8">
           <span className="material-symbols-outlined rounded-full bg-gray-200 p-1 cursor-pointer ">
             arrow_back

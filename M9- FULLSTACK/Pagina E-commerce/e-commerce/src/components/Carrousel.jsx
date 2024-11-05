@@ -9,19 +9,21 @@ function Carrousel() {
     setActive(id);
   };
 
-  const movimentCarrousel = (time) => {
-    setTimeout(()=>{ 
-      if(active < (info.length-1)){
-        setActive(active+1)
-      }else{
-        setActive(0)
-      }
-    }, time);
-  };
+  useEffect(() => {
+    const movimentCarrousel = setInterval(() => {
+      setActive((valorActual) => {
+        if (valorActual < data.length - 1) {
+          return valorActual + 1;
+        } else {
+          return 0;
+        }
+      });
+    }, 5000);
 
-  useEffect(()=>{
-    movimentCarrousel(5000)
-  },[active])
+    return () => {
+      clearInterval(movimentCarrousel);
+    };
+  }, []);
 
   return (
     <article className="col-span-7 pt-12 pl-12">
