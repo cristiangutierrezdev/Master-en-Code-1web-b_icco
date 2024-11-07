@@ -1,0 +1,7 @@
+# Ejercicio de práctica con github actions
+
+- Definir nuevas variables de entorno y usarlas en los mensajes de salida.
+<br>
+- Ejecutar un script con múltiples comandos, usando ```run: |``` para practicar la sintaxis de múltiples líneas.
+<br>
+- Configurar una acción que se ejecute en otra rama distinta a main, para que experimenten cómo cambiar los trigger
